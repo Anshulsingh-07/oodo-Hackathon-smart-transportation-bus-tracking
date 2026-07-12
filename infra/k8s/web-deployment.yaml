@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: transitops-web
+  labels:
+    app: transitops-web
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: transitops-web
+  template:
+    metadata:
+      labels:
+        app: transitops-web
+    spec:
+      containers:
+        - name: web
+          image: transitops/web:latest
+          ports:
+            - containerPort: 3000
+          env:
+            - name: REACT_APP_API_URL
+              value: "http://api.transitops.svc.cluster.local" 
+          resources:
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
+            requests:
+              memory: "256Mi"
+              cpu: "250m"
+      imagePullSecrets:
+        - name: regcred

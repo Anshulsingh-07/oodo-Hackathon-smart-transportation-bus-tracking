@@ -1,0 +1,1 @@
+// This file defines TypeScript types and interfaces for UI components.

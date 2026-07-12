@@ -1,0 +1,31 @@
+{
+  "name": "shared",
+  "version": "1.0.0",
+  "description": "Shared utilities and types for TransitOps",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^4.0.0",
+    "jest": "^26.0.0",
+    "@types/jest": "^26.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/TransitOps.git"
+  },
+  "keywords": [
+    "transit",
+    "shared",
+    "utilities"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yourusername/TransitOps/issues"
+  },
+  "homepage": "https://github.com/yourusername/TransitOps#readme"
+}

@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "lib": ["ES2020", "DOM"],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["apps/**/*", "packages/**/*", "scripts/**/*", "tests/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}

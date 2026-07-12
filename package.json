@@ -1,0 +1,22 @@
+{
+  "name": "transitops",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev -w transitops-api\" \"npm run dev -w transitops-web\"",
+    "lint": "npm run lint -w transitops-api && npm run lint -w transitops-web",
+    "test": "npm run test -w transitops-api",
+    "build": "turbo build",
+    "start": "npm run start -w transitops-api"
+  },
+  "dependencies": {
+    "concurrently": "^9.0.1"
+  },
+  "devDependencies": {
+    "turbo": "^2.0.14"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}

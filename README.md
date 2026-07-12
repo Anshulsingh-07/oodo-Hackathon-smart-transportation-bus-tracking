@@ -172,4 +172,4 @@ npm run test
    - Confirm API is reading the same MySQL database name configured in `.env`
 - SMTP not configured:
    - License emails are skipped if SMTP vars are empty
-   - In-app notifications still work
+   - In-app notifications still would work 
